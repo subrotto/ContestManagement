@@ -16,16 +16,34 @@ const ShowContests = () => {
    
     return (
         <div>
-              {
-                    contests.map(contest=><div className='border-4 p-4 mb-4'>
-                            {contest.name}
-                            <br />
-                            <Link className='btn mt-2' to={`/showstudentlist/${contest._id}`}><button>Enter</button></Link>
+            <div className='card-container flex flex-wrap justify-between'>
+                {
+                    contests.map(contest=><div className='card w-96 bg-base-100 shadow-xl mb-4 '>
+                        <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card-body">
+                      <h2 className="card-title">{contest.name}</h2>
+                      
+                      <div className="card-actions justify-end">
+                      <Link className='btn mb-2' to={`/showstudentlist/${contest._id}`}><button>Enter</button></Link>
+                      </div>
+                      
+                    </div>
+                  </div>
                     </div>
                     )
                 }
+                </div>
         </div>
     );
 };
 
 export default ShowContests;
+
+// {
+//     contests.map(contest=><div className='border-4 p-4 mb-4'>
+//             {contest.name}
+//             <br />
+//             <Link className='btn mt-2' to={`/showstudentlist/${contest._id}`}><button>Enter</button></Link>
+//     </div>
+//     )
+// }

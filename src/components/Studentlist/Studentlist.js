@@ -48,13 +48,17 @@ useEffect(()=>{
             <input className='border mr-2' placeholder='Type Rank' type="text" name="" id="" ref={rankref}/>
             <button className='btn ' onClick={handleDetails}>ADD Details</button>
 
+
+<div className='flex flex-wrap'>
 {
 
-    contestdetails.map(details=><SpecificStudent details={details}></SpecificStudent> )
+contestdetails.map(details=><div className="grid grid-rows-4"><SpecificStudent details={details}></SpecificStudent></div> )
 
 }
+</div>
+</div>
 
-        </div>
+      
     );
 };
 

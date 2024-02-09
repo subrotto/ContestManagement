@@ -16,12 +16,14 @@ const ShowStudentlist = () => {
 
     return (
         <div>
+            <div className='flex flex-wrap'>
             {
 
-    contestdetails.map(details=><SpecificStudent details={details}></SpecificStudent> )
+    contestdetails.map(details=><div className='grid grid-rows-4'><SpecificStudent details={details}></SpecificStudent></div> )
 
 
 }
+        </div>
         </div>
     );
 };

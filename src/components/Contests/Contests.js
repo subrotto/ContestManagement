@@ -56,17 +56,30 @@ const handleassignteam=()=>{
             <button className='btn mb-4 ml-2' onClick={handleContest}>ADD Contest</button>
 
 <br />
-
+<div className='card-container flex flex-wrap justify-between'>
                 {
-                    contests.map(contest=><div className='border-4 mb-2'>
-                            <div className='mt-4'>{contest.name}</div>
-                            <br />
-                            <Link className='btn mb-2' to={`/studentadd/${contest._id}`}><button>Enter</button></Link>
+                    contests.map(contest=><div className='card w-96 bg-base-100 shadow-xl mb-4 '>
+                        <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card-body">
+                      <h2 className="card-title">{contest.name}</h2>
+                      
+                      <div className="card-actions justify-end">
+                      <Link className='btn mb-2' to={`/studentadd/${contest._id}`}><button>Enter</button></Link>
+                      </div>
+                      
+                    </div>
+                  </div>
                     </div>
                     )
                 }
+                </div>
         </div>
     );
 };
 
 export default Contests;
+{/* <div className='border-4 mb-2'>
+                            <div className='mt-4'>{contest.name}</div>
+                            <br />
+                            <Link className='btn mb-2' to={`/studentadd/${contest._id}`}><button>Enter</button></Link>
+                    </div> */}
