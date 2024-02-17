@@ -12,6 +12,7 @@ const Header = () => {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <Link className='p-4 border-2 mb-2 btn btn-ghost' to='/'>Home</Link>
               <Link className='p-4 border-2 mb-2 btn btn-ghost' to='/showcontests'>Contests</Link>
+              <Link className='p-4 border-2 mb-2 btn btn-ghost' to='/leaderboard'>LeaderBoard</Link>
               <Link className='p-4 border-2 mb-2 btn btn-ghost' to='showteams'>Team Formation</Link>
               <Link className='p-4 border-2 mb-2 btn btn-ghost' to='/login'>Login As Admin</Link>
               

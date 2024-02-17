@@ -46,10 +46,15 @@ const handleassignteam=()=>{
     navigate('/teamassign');
 }
 
+const handleLeaderboard=()=>{
+    navigate('/leaderboardinput');
+}
+
     return (
         <div>
 
         <button className='btn mb-12' onClick={handleassignteam}>Assign Teams</button>
+        <button className='btn mb-12 ml-4' onClick={handleLeaderboard}>LeaderBoard</button>
         <br />
 
             <input className='border-4' ref={contestref} type="text" name="" id="" placeholder='Type Contest Name' />

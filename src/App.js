@@ -11,6 +11,8 @@ import ShowTeams from './components/ShowTeams/ShowTeams';
 import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
+import LeaderBoardinput from './components/LeaderBoardinput/LeaderBoardinput';
+import LeaderBoard from './components/LeaderBoard/LeaderBoard';
 
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}></Route>
         <Route path='/showcontests' element={<ShowContests></ShowContests>}></Route>
+        <Route path='/leaderboardinput' element={<LeaderBoardinput></LeaderBoardinput>}></Route>
+        <Route path='/leaderboard' element={<LeaderBoard></LeaderBoard>}></Route>
+
         <Route path='/contest' element={<Contests></Contests>}></Route>
         <Route path='/showstudentlist/:contestId' element={<ShowStudentlist></ShowStudentlist>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

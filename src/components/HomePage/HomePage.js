@@ -1,11 +1,14 @@
 import React from 'react';
 import pic1 from './../images/programmersArena.jpg';
 import { Link } from 'react-router-dom';
+import sumon from './../images/sumon.jpg';
+import sourov from './../images/sourov.jpg';
+import anik from './../images/anik.jpg';
 const HomePage = () => {
     return (
        <div>
 
-        <Link className='btn mr-4' to='/contest'><button>STUDENT</button></Link>
+        <Link className='btn mr-4' to='/showcontests'><button>STUDENT</button></Link>
         <Link className='btn' to='/login'><button>ADMIN</button></Link>
 
         <div className='mt-8'>
@@ -21,6 +24,46 @@ const HomePage = () => {
   </div>
 </div>
         </div>
+
+        <div className='flex flex-wrap mt-4 justify-evenly'>
+       <div>
+       <div className="avatar">
+  <div className="w-24 rounded-full">
+    <img src={sumon} />
+  </div>
+</div>
+<div className='font-bold text-center text-cyan-500'>
+<br /> Md Suman Sarker 
+     
+</div>
+       </div>
+
+       <div>
+
+       <div className="avatar">
+  <div className="w-24 rounded-full">
+    <img src={sourov}/>
+  </div>
+</div>
+<div className='font-bold text-cyan-500'>
+<br />  Sourav Roy 
+   
+</div>
+       </div>
+
+       <div>
+       <div className="avatar">
+  <div className="w-24 rounded-full">
+    <img src={anik} />
+  </div>
+</div>
+<div className='font-bold text-cyan-500'>
+<br />  Anik Raihan 
+   
+</div>
+       </div>
+        </div>
+
        </div>
     );
 };
